@@ -7,7 +7,7 @@ use Carp;
 
 use MP3::ID3Lib;
 
-our $VERSION = sprintf "%d.%02d", '$Revision: 1.2 $ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = sprintf "%d.%02d", '$Revision: 1.3 $ ' =~ /(\d+)\.(\d+)/;
 
 my %data = (artist => 'TPE1',
             title  => 'TIT2',
@@ -32,6 +32,20 @@ sub AUTOLOAD {
   my ($pkg, $sub) = $AUTOLOAD =~ /(.+)::(\w+)/;
 
   die "Invalid attribute $sub" unless exists $data{$sub};
+
+  if ($_[1]) {
+    my $attr = $_[1];
+    my $found;
+    for (@{$_[0]->{obj}->frames}) {
+      if($_->code eq $data{$sub}) {
+	$found = 1;
+	$_->set($attr);
+      }
+    }
+
+    $_[0]->{obj}->add_frame($data{$sub}, $_[1]) unless $found;
+    $_[0]->{obj}->commit;
+  }
 
   for (@{$_[0]->{obj}->frames}) {
     return $_->value if $_->code eq $data{$sub};
