@@ -7,7 +7,7 @@ use Carp;
 
 use MP3::ID3Lib;
 
-our $VERSION = sprintf "%d.%02d", '$Revision: 1.3 $ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = sprintf "%d.%02d", '$Revision: 1.4 $ ' =~ /(\d+)\.(\d+)/;
 
 my %data = (artist => 'TPE1',
             title  => 'TIT2',
@@ -40,10 +40,11 @@ sub AUTOLOAD {
       if($_->code eq $data{$sub}) {
 	$found = 1;
 	$_->set($attr);
+        last;
       }
     }
 
-    $_[0]->{obj}->add_frame($data{$sub}, $_[1]) unless $found;
+    $_[0]->{obj}->add_frame($data{$sub}, $attr) unless $found;
     $_[0]->{obj}->commit;
   }
 

@@ -5,10 +5,9 @@
 
 # change 'tests => 1' to 'tests => last_test_to_print';
 
-use Test;
-BEGIN { plan tests => 8 };
-use AudioFile::Info;
-ok(1);
+use Test::More tests => 8;
+
+BEGIN { use_ok('AudioFile::Info') };
 
 #########################
 
@@ -17,10 +16,10 @@ ok(1);
 
 my $song = AudioFile::Info->new('t/test.mp3',
                                 { mp3 => 'AudioFile::Info::MP3::ID3Lib' });
-ok(ref $song eq 'AudioFile::Info::MP3::ID3Lib');
-ok($song->title eq 'test');
-ok($song->artist eq 'davorg');
-ok($song->album eq 'none');
-ok($song->track eq '0');
-ok($song->year eq '2003');
-ok($song->genre eq 'nonsense');
+is(ref $song, 'AudioFile::Info::MP3::ID3Lib');
+is($song->title, 'test');
+is($song->artist, 'davorg');
+is($song->album, 'none');
+is($song->track, '0');
+is($song->year, '2003');
+is($song->genre, 'nonsense');

@@ -1,6 +1,19 @@
-2004-07-15 18:34  dave
+2004-11-21 13:27  dave
 
-        * lib/AudioFile/Info/MP3/ID3Lib.pm (1.3): Added ability to write
+	* t/: 1_read.t (1.1), 2_write.t (1.1), 3_pod.t (1.1): Added new
+	test files
+	* t/2_pod.t (1.2): Renamed to 3_pod.t
+	* t/1.t (1.3): Renamed to 1_read.t
+	* lib/AudioFile/Info/MP3/ID3Lib.pm (1.3): Added writing support
+	* lib/AudioFile/Info/Build.pm (1.3): Changed weightings
+	* META.yml (1.3): Shouldn't be in CVS
+	* MANIFEST (1.4): Changed test files
+	* Build.PL (1.4): Supports writing MP3s
+
+2004-05-22 20:01  dave
+
+	* t/2_pod.t (1.1): Added pod tests
+	* MANIFEST (1.3): Removed Makefile.PL from MANIFEST
 
 2004-05-13 21:14  dave
 
