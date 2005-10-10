@@ -1,8 +1,8 @@
---- #YAML:1.0
+---
 name: AudioFile-Info-MP3-ID3Lib
-version: 1.04
+version: 1.05
 author:
-  - Dave Cross, E<lt>dave@dave.org.ukE<gt>
+  - 'Dave Cross, E<lt>dave@dave.org.ukE<gt>'
 abstract: Perl extension to get info from MP3 files.
 license: perl
 requires:
@@ -17,5 +17,5 @@ provides:
     file: lib/AudioFile/Info/Build.pm
   AudioFile::Info::MP3::ID3Lib:
     file: lib/AudioFile/Info/MP3/ID3Lib.pm
-    version: 1.04
-generated_by: Module::Build version 0.2607
+    version: 1.05
+generated_by: Module::Build version 0.2611

@@ -7,7 +7,7 @@ use Carp;
 
 use MP3::ID3Lib;
 
-our $VERSION = sprintf "%d.%02d", '$Revision: 1.4 $ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = sprintf "%d.%02d", '$Revision: 1.5 $ ' =~ /(\d+)\.(\d+)/;
 
 my %data = (artist => 'TPE1',
             title  => 'TIT2',
@@ -67,6 +67,13 @@ This is a plugin for AudioFile::Info which uses MP3::ID3Lib to get
 data about MP files.
 
 See L<AudioFile::Info> for more details.
+
+=head1 METHODS
+
+=head2 new
+
+Creates a new object of class AudioFile::Info::MP3::ID3Lib. Usually called
+by AudioFile::Info::new.
 
 =head1 AUTHOR
 

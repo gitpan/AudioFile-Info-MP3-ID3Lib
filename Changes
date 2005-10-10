@@ -1,46 +1,47 @@
-2004-11-21 13:27  dave
+2005-10-10 15:03  dave
 
-	* t/: 1_read.t (1.1), 2_write.t (1.1), 3_pod.t (1.1): Added new
-	test files
-	* t/2_pod.t (1.2): Renamed to 3_pod.t
-	* t/1.t (1.3): Renamed to 1_read.t
-	* lib/AudioFile/Info/MP3/ID3Lib.pm (1.3): Added writing support
-	* lib/AudioFile/Info/Build.pm (1.3): Changed weightings
-	* META.yml (1.3): Shouldn't be in CVS
-	* MANIFEST (1.4): Changed test files
-	* Build.PL (1.4): Supports writing MP3s
+	* MANIFEST, t/4_pod_coverage.t, lib/AudioFile/Info/Build.pm,
+	  lib/AudioFile/Info/MP3/ID3Lib.pm: Added t/4_pod_coverage.t
+
+2004-11-21 13:34  dave
+
+	* lib/AudioFile/Info/MP3/ID3Lib.pm: Fixed mp3 writing support
+	* t/: 1_read.t, 2_write.t, 3_pod.t: Added new test files
+	* t/2_pod.t: Renamed to 3_pod.t
+	* t/1.t: Renamed to 1_read.t
+	* lib/AudioFile/Info/MP3/ID3Lib.pm: Added writing support
+	* lib/AudioFile/Info/Build.pm: Changed weightings
+	* META.yml: Shouldn't be in CVS
+	* MANIFEST: Changed test files
+	* Build.PL: Supports writing MP3s
 
 2004-05-22 20:01  dave
 
-	* t/2_pod.t (1.1): Added pod tests
-	* MANIFEST (1.3): Removed Makefile.PL from MANIFEST
+	* t/2_pod.t: Added pod tests
 
-2004-05-13 21:14  dave
+2004-05-13 21:15  dave
 
-	* Changes (1.2): Remove Changes from CVS
+	* MANIFEST: Removed Makefile.PL from MANIFEST
+	* Changes: Remove Changes from CVS
 
 2003-09-27 20:32  dave
 
-	* README (1.2): Changed to describe Module::Build installation
-	method.
-	* Build.PL (1.3), MANIFEST (1.2): Reordered Build.pl (create build
-	script _before_ writing notes).  Added Makefile.PL to MANIFEST.
+	* README: Changed to describe Module::Build installation method.
+	* Build.PL, MANIFEST: Reordered Build.pl (create build script
+	  _before_ writing notes).  Added Makefile.PL to MANIFEST.
 
 2003-09-27 18:11  dave
 
-	* Build.PL (1.2), META.yml (1.2), lib/AudioFile/Info/Build.pm
-	(1.2), t/1.t (1.2): Various Changes.
+	* Build.PL, META.yml, lib/AudioFile/Info/Build.pm, t/1.t: Various
+	  Changes.
 
 2003-09-27 16:51  dave
 
-	* lib/AudioFile/Info/MP3/ID3Lib.pm (1.2): Fixed description.
-	* Build.PL (1.1.1.1), Changes (1.1.1.1), MANIFEST (1.1.1.1),
-	META.yml (1.1.1.1), README (1.1.1.1), lib/AudioFile/Info/Build.pm
-	(1.1.1.1), lib/AudioFile/Info/MP3/ID3Lib.pm (1.1.1.1), t/1.t
-	(1.1.1.1), t/test.mp3 (1.1.1.1): AudioFile::Info plugin for
-	MP3::ID3Lib
-	* Build.PL (1.1), Changes (1.1), MANIFEST (1.1), META.yml (1.1),
-	README (1.1), lib/AudioFile/Info/Build.pm (1.1),
-	lib/AudioFile/Info/MP3/ID3Lib.pm (1.1), t/1.t (1.1), t/test.mp3
-	(1.1): Initial revision
+	* lib/AudioFile/Info/MP3/ID3Lib.pm: Fixed description.
+	* Build.PL, Changes, MANIFEST, META.yml, README,
+	  lib/AudioFile/Info/Build.pm, lib/AudioFile/Info/MP3/ID3Lib.pm,
+	  t/1.t, t/test.mp3: AudioFile::Info plugin for MP3::ID3Lib
+	* Build.PL, Changes, MANIFEST, META.yml, README,
+	  lib/AudioFile/Info/Build.pm, lib/AudioFile/Info/MP3/ID3Lib.pm,
+	  t/1.t, t/test.mp3: Initial revision
 
