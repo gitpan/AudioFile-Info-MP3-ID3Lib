@@ -1,47 +1,71 @@
-2005-10-10 15:03  dave
+2008-06-30  dave
 
-	* MANIFEST, t/4_pod_coverage.t, lib/AudioFile/Info/Build.pm,
-	  lib/AudioFile/Info/MP3/ID3Lib.pm: Added t/4_pod_coverage.t
+	* [r25] Build.PL, lib/AudioFile/Info/MP3/ID3Lib.pm:
+	  Use subversion revision number.
+	  Make YAML recommended by build.
+	* [r24] Build.PL:
+	  Various fixes
 
-2004-11-21 13:34  dave
+2005-10-10  dave
 
-	* lib/AudioFile/Info/MP3/ID3Lib.pm: Fixed mp3 writing support
-	* t/: 1_read.t, 2_write.t, 3_pod.t: Added new test files
-	* t/2_pod.t: Renamed to 3_pod.t
-	* t/1.t: Renamed to 1_read.t
-	* lib/AudioFile/Info/MP3/ID3Lib.pm: Added writing support
-	* lib/AudioFile/Info/Build.pm: Changed weightings
-	* META.yml: Shouldn't be in CVS
-	* MANIFEST: Changed test files
-	* Build.PL: Supports writing MP3s
+	* [r23] MANIFEST:
+	  Added t/4_pod_coverage.t
+	* [r22] MANIFEST, lib/AudioFile/Info/Build.pm,
+	  lib/AudioFile/Info/MP3/ID3Lib.pm, t/4_pod_coverage.t:
+	  Added t/4_pod_coverage.t
 
-2004-05-22 20:01  dave
+2004-11-21  dave
 
-	* t/2_pod.t: Added pod tests
+	* [r21] lib/AudioFile/Info/MP3/ID3Lib.pm:
+	  Fixed mp3 writing support
+	* [r20] t/1_read.t, t/2_write.t, t/3_pod.t:
+	  Added new test files
+	* [r19] t/2_pod.t:
+	  Renamed to 3_pod.t
+	* [r18] t/1.t:
+	  Renamed to 1_read.t
+	* [r17] lib/AudioFile/Info/MP3/ID3Lib.pm:
+	  Added writing support
+	* [r16] lib/AudioFile/Info/Build.pm:
+	  Changed weightings
+	* [r15] META.yml:
+	  Shouldn't be in CVS
+	* [r14] MANIFEST:
+	  Changed test files
+	* [r13] Build.PL:
+	  Supports writing MP3s
 
-2004-05-13 21:15  dave
+2004-05-22  dave
 
-	* MANIFEST: Removed Makefile.PL from MANIFEST
-	* Changes: Remove Changes from CVS
+	* [r12] t/2_pod.t:
+	  Added pod tests
 
-2003-09-27 20:32  dave
+2004-05-13  dave
 
-	* README: Changed to describe Module::Build installation method.
-	* Build.PL, MANIFEST: Reordered Build.pl (create build script
-	  _before_ writing notes).  Added Makefile.PL to MANIFEST.
+	* [r11] MANIFEST:
+	  Removed Makefile.PL from MANIFEST
+	* [r10] Changes:
+	  Remove Changes from CVS
 
-2003-09-27 18:11  dave
+2003-09-27  dave
 
-	* Build.PL, META.yml, lib/AudioFile/Info/Build.pm, t/1.t: Various
-	  Changes.
+	* [r9] README:
+	  Changed to describe Module::Build installation method.
+	* [r8] Build.PL, MANIFEST:
+	  Reordered Build.pl (create build script _before_ writing notes).
+	  Added Makefile.PL to MANIFEST.
+	* [r7] Build.PL, META.yml, lib/AudioFile/Info/Build.pm, t/1.t:
+	  Various Changes.
+	* [r6] lib/AudioFile/Info/MP3/ID3Lib.pm:
+	  Fixed description.
+	* [r2] Build.PL, Changes, MANIFEST, META.yml, README, lib,
+	  lib/AudioFile, lib/AudioFile/Info, lib/AudioFile/Info/Build.pm,
+	  lib/AudioFile/Info/MP3, lib/AudioFile/Info/MP3/ID3Lib.pm, t,
+	  t/1.t, t/test.mp3:
+	  Initial revision
 
-2003-09-27 16:51  dave
+2003-09-27  
 
-	* lib/AudioFile/Info/MP3/ID3Lib.pm: Fixed description.
-	* Build.PL, Changes, MANIFEST, META.yml, README,
-	  lib/AudioFile/Info/Build.pm, lib/AudioFile/Info/MP3/ID3Lib.pm,
-	  t/1.t, t/test.mp3: AudioFile::Info plugin for MP3::ID3Lib
-	* Build.PL, Changes, MANIFEST, META.yml, README,
-	  lib/AudioFile/Info/Build.pm, lib/AudioFile/Info/MP3/ID3Lib.pm,
-	  t/1.t, t/test.mp3: Initial revision
+	* [r1] .:
+	  New repository initialized by cvs2svn.
 
