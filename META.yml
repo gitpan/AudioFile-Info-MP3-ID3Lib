@@ -1,6 +1,6 @@
 ---
 name: AudioFile-Info-MP3-ID3Lib
-version: 1.06
+version: 1.07
 author:
   - 'Dave Cross, E<lt>dave@dave.org.ukE<gt>'
 abstract: Perl extension to get info from MP3 files.
